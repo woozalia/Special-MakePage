@@ -1,0 +1,7 @@
+{
+	"makepage-name": "Special:MakePage",
+	"makepage-desc": "[[Special:MakePage|creates pages]] from form input",
+        "makepage-action-message":"MakePage: does anything use this string?",
+	"makepage-summary":"create pages from form input"
+}
+

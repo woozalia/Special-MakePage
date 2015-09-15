@@ -1,0 +1,31 @@
+{
+	"name": "Special:MakePage",
+	"namemsg": "makepage-name",
+	"description": "special page for making new pages using form data plus a template",
+	"descriptionmsg": "makepage-desc",
+
+	"author": "[http://htyp.org/User:Woozle Woozle (Nick) Staddon]",
+	"url": "http://htyp.org/MediaWiki/Special/MakePage",
+
+	"SpecialPages": {
+		"MakePage": "SpecialMakePage"
+	},
+	"MessagesDirs": {
+		"MakePage": [
+			"i18n"
+		]
+	},
+	"version": "0.80",
+	"license-name": "GNU Affero",
+	"type": "specialpage",
+
+	"AutoloadClasses": {
+		"SpecialMakePage":		"MakePage.main.php",
+		"EditOtherPage": 		"MakePage.edit.php",
+		"clsStringTemplate_MWRequest":	"MakePage.tplt.php",
+		"mwxcMakePageJob":		"MakePage.job.php"
+	},
+
+	"manifest_version": 1
+}
+

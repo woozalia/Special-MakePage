@@ -1,0 +1,7 @@
+{
+	"makepage-name": "MediaWiki standard message for the extension's name as displayed in Special:SpecialPages",
+        "makepage-desc": "MediaWiki standard message for the extension's description; documentation suggests this should be {{desc}}",
+        "makepage-action-message":"MediaWiki standard message, purpose unclear",
+        "makepage-summary":"MediaWiki standard message - apparently appears near the top when page is invoked"
+}
+
