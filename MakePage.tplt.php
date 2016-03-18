@@ -18,7 +18,8 @@
 	$wxgDebug .= '* ['.$iName.'] = ';
 	switch ($iName) {
 	  case '!TIMESTAMP':
-	    throw new exception('Who is requesting "!TIMESTAMP"?');
+	    $out = '"!TIMESTAMP" has been renamed "?TIMESTAMP" -- please update the page template.';
+	    break;
 	  case '?TIMESTAMP':
 	    $strFmt = $this->GetValue('!TIMEFMT');
 	    //$strFmt = $wgRequest->getText('!TIMEFMT');
@@ -32,6 +33,7 @@
 	  default:
 	    $sName = strtolower($iName);
 	    if (fcArray::Exists($this->Keys,$sName)) {
+		// TODO: add some way to make specific fields mandatory
 		$sKey = $this->Keys[$sName];	// get $_POST key
 		$sVal = $_POST[$sKey];		// get $_POST value
 	    } else {
