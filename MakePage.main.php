@@ -117,8 +117,10 @@ class SpecialMakePage extends SpecialPageApp {
 		$wgOut->AddWikiText("'''Make final changes to the text here, and save to create the page:'''");
 		$wgTitle = $mwoNewTitle;	// make the form post to the page we want to create
 		$mwoxNewEdit->action = 'submit';
+		$mwoxNewEdit->contentModel = CONTENT_MODEL_WIKITEXT;
 		$mwoxNewEdit->showEditForm($sEditSumm);
 	    } else {
+		// IMMEDIATE mode (no preview, just create the page):
 
 		//* 2015-09-15 This code does create a new page with the correct contents,
 		  // but it has to be manually purged before tags are parsed.
